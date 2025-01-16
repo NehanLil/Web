@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Squid Game - Riviera 2025</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* ... (rest of CSS for body, header, main, event-details remains the same) */
+        .bottom-bar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #222;
+            z-index: 100;
+        }
+
+        .bottom-bar-content {
+            display: grid; /* Use grid for layout */
+            grid-template-columns: repeat(5, 1fr); /* 5 equal columns */
+            align-items: center;
+            max-width: 90%;
+            margin: 0 auto;
+            border: 2px solid white;
+            height: 100%;
+        }
+
+        .bottom-bar-content > div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            border-right: 2px solid white;
+            white-space: nowrap;
+        }
+        .bottom-bar-content > div:last-child {
+            border-right: none;
+        }
+
+        .bottom-bar button {
+            background-color: purple;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            width: 100%;
+            height: 100%;
+        }
+        .bottom-bar .logo-center{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .bottom-bar .logo-center img{
+            height: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .bottom-bar-content {
+                grid-template-columns: 1fr; /* Single column on mobile */
+                flex-direction: column;
+            }
+            .bottom-bar-content > div {
+                border-right: none;
+                border-bottom: 2px solid white;
+            }
+            .bottom-bar-content > div:last-child {
+                border-bottom: none;
+            }
+        }
+    </style>
+</head>
+<body>
+        <header>
+        <div class="logo">
+            <img src="VIT_light.png" alt="VIT Logo">
+        </div>
+        <div class="logo">
+            <img src="gravitas.png" alt="Riviera Logo">
+        </div>
+        <nav>
+            <a href="#">MENU</a>
+        </nav>
+    </header>
+    <main>
+        <section class="event-details">
+            <div class="image-container">
+                <img src="SURVIVAL.png" alt="Squid Game Image">
+            </div>
+            <div class="text-content">
+                <h1>Squid Game</h1>
+                <p class="club">Rotaract Club</p>
+                <p class="price">₹100 <span class="per-person">(per person)</span></p>
+                <p class="gst">+18% GST</p>
+                <p class="description">The game "Squid Game" involves six rounds of competitive tasks where teams face unique challenges like quick naming, emoji decoding, drawing charades, absurd responses, guessing famous personalities, and showcasing talents under specific conditions. Teams earn points based on creativity, speed, and accuracy across the rounds, with penalties for cheating or irrelevant responses.</p>
+                <p class="tagline">Earn points, survive the challenges, and outlast the competition. Only one team will emerge from the Squid Game!</p>
+                <div class="details-grid">
+                    <div class="detail-item">
+                        <p class="detail-label">TEAM SIZE</p>
+                        <p class="detail-value">2-4 members</p>
+                    </div>
+                    <div class="detail-item">
+                        <p class="detail-label">SLOTS</p>
+                        <p class="detail-value">Rajaji Hall | 9:00 AM - 5:00 PM IST | Feb 23</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bottom-bar">
+            <div class="bottom-bar-content">
+                <div>Squid Game<br><span class="club">Rotaract Club</span></div>
+                <div>Feb 23</div>
+                <div>9:00 AM - 5:00 PM</div>
+                <div>₹100/-</div>
+                <div><button>REGISTER SOON ></button></div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

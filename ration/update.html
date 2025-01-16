@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Update Ration Card</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Styles specific to update.html */
+        #update-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            /* Responsive grid */
+            gap: 20px;
+            padding: 20px;
+        }
+
+        #update-options a {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            border-width: 2px;
+            text-align: center;
+            min-height: 150px;
+            /* Set a minimum height for consistent sizing */
+        }
+
+        /* Example of adding icons (you'll need to provide the actual icons) */
+        .address-icon::before {
+            content: "";
+            display: block;
+            width: 50px;
+            height: 50px;
+            background-image: url("address.png");
+            /* Path to address icon */
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin-bottom: 10px;
+        }
+
+        .member-icon::before {
+            content: "";
+            display: block;
+            width: 50px;
+            height: 50px;
+            background-image: url("member.png");
+            /* Path to member icon */
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin-bottom: 10px;
+        }
+
+        .head-icon::before {
+            content: "";
+            display: block;
+            width: 50px;
+            height: 50px;
+            background-image: url("head.png");
+            /* Path to head icon */
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin-bottom: 10px;
+        }
+
+        .contact-icon::before {
+            content: "";
+            display: block;
+            width: 50px;
+            height: 50px;
+            background-image: url("contact.png");
+            /* Path to contact icon */
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <img src="flag.png" id="navbar" alt="Indian Flag"> 
+        <h1 width = "80vw">National Food Security Portal</h1> 
+        <img src="emblem.png" id="navbar" alt="emblem">
+    </header>
+    <h1>Update Existing Ration Card</h1>
+    <div id="update-options">
+        <a href="address.html" class="address-icon">Change Address</a>
+        <a href="member.html" class="member-icon">Add/Remove Family Member</a>
+        <a href="head.html" class="head-icon">Change Head of Family</a>
+        <a href="contact.html" class="contact-icon">Update Contact Details</a>
+    </div>
+</body>
+
+</html>

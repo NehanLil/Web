@@ -1,0 +1,1478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>23BCE0306</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 20px;
+        }
+
+        .project {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .screenshot {
+            max-width: 100%;
+            /* Occupy full width of container */
+            display: block;
+            /* Prevents extra spacing below image */
+            margin-bottom: 10px;
+        }
+
+        pre {
+            background-color: #f0f0f0;
+            padding: 10px;
+            overflow-x: auto;
+            white-space: pre-wrap;
+            /* added this to wrap long code lines */
+        }
+
+        code {
+            font-family: monospace;
+        }
+
+        h2 a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Nehan Lil - Lab Assessment (BCSE203E)</h1>
+    <p>This website showcases the five projects developed for the BCSE203E Lab Assessment. Each project includes a
+        screenshot, code snippets, and a list of components and properties used.</p>
+
+    <div class="project">
+        <h2><a href="resume.html">Resume</a></h2>
+        <img class="screenshot" src="resumeSS.png" alt="Resume Screenshot">
+        <h3>Code:</h3>
+        <pre><code id="resumeCode">
+            &lt;!DOCTYPE html&gt;
+    &lt;html lang=&quot;en&quot;&gt;
+    &lt;head&gt;
+        &lt;meta charset=&quot;UTF-8&quot;&gt;
+        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+        &lt;title&gt;Resume - Nehan Lil&lt;/title&gt;
+        &lt;style&gt;
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            display: flex;
+            max-width: 900px;
+            margin: 20px auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            background-color: #ffffff;
+            border-radius: 10px;
+        }
+        .sidebar {
+            width: 30%;
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .sidebar img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        .sidebar h2 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .sidebar p {
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        .main {
+            width: 70%;
+            padding: 20px;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section h3 {
+            border-bottom: 2px solid #2c3e50;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+        .section ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .section ul li {
+            margin-bottom: 10px;
+        }
+        .contact-info, .skills {
+            font-size: 14px;
+        }
+        .skills ul li {
+            background-color: #2c3e50;
+            color: white;
+            display: inline-block;
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;!-- Sidebar --&gt;
+        &lt;div class=&quot;sidebar&quot;&gt;
+            &lt;img src=&quot;avatar.png&quot; alt=&quot;Profile Picture&quot;&gt;
+            &lt;h2&gt;Nehan Lil&lt;/h2&gt;
+            &lt;p&gt;A passionate designer and computer science student with a knack for creative problem-solving and front-end development.&lt;/p&gt;
+            &lt;div class=&quot;contact-info&quot;&gt;
+                &lt;p&gt;&lt;strong&gt;Phone:&lt;/strong&gt; +91 12345 67890&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Email:&lt;/strong&gt; nehan.lil@email.com&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Location:&lt;/strong&gt; Vellore, India&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;!-- Main Section --&gt;
+        &lt;div class=&quot;main&quot;&gt;
+            &lt;div class=&quot;section&quot;&gt;
+                &lt;h3&gt;Education&lt;/h3&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;&lt;strong&gt;B.Tech in Computer Science&lt;/strong&gt; - VIT Vellore University (2023 - 2027)&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;section&quot;&gt;
+                &lt;h3&gt;Experience&lt;/h3&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;&lt;strong&gt;Freelance Designer&lt;/strong&gt; - Waffle Company (2023 - 2025)&lt;br&gt;
+                        Designed menus, banners, and stall setups, enhancing brand visibility.
+                    &lt;/li&gt;
+                    &lt;li&gt;&lt;strong&gt;Design Head&lt;/strong&gt; - SCRS Chapter, VIT Vellore (2025 - )&lt;br&gt;
+                        Led the design team, creating merchandise, banners, and promotional materials for events.
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;section&quot;&gt;
+                &lt;h3&gt;Skills&lt;/h3&gt;
+                &lt;ul class=&quot;skills&quot;&gt;
+                    &lt;li&gt;HTML&lt;/li&gt;
+                    &lt;li&gt;CSS&lt;/li&gt;
+                    &lt;li&gt;Graphic Design&lt;/li&gt;
+                    &lt;li&gt;Creative Problem-Solving&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;section&quot;&gt;
+                &lt;h3&gt;Projects&lt;/h3&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;&lt;strong&gt;Advertising Elements for Waffle Company:&lt;/strong&gt; Built multiple posters, banners, etc. for brand visibility.&lt;/li&gt;
+                    &lt;li&gt;&lt;strong&gt;Instagram Posts and Stories:&lt;/strong&gt; Managed the Instagram account for SCRS Chapter at VIT to publicize upcoming events.&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+        
+<h3>HTML Components:</h3>
+<ul>
+    <li>!DOCTYPE html: Declares the document type and version of HTML.</li>
+    <li>html: The root element of the HTML document.</li>
+    <li>head: Contains meta-information about the HTML document.</li>
+    <li>title: Specifies the title of the HTML page.</li>
+    <li>meta: Provides metadata about the HTML document (charset, viewport).</li>
+    <li>body: Contains the visible page content.</li>
+    <li>div: Defines a division or section in an HTML document.</li>
+    <li>img: Defines an image element.</li>
+    <li>h2: Heading element of level 2.</li>
+    <li>p: Defines a paragraph of text.</li>
+    <li>ul: Defines an unordered list.</li>
+    <li>li: Defines a list item within an unordered list.</li>
+    <li>h3: Heading element of level 3.</li>
+    <li>strong: Defines important text (usually bold).</li>
+</ul>
+
+<h3>CSS Properties:</h3>
+</div>
+<ul>
+    <li>font-family: Specifies the font family for the text.</li>
+    <li>margin: Sets the outer margin for an element.</li>
+    <li>padding: Sets the inner padding for an element.</li>
+    <li>background-color: Sets the background color of an element.</li>
+    <li>width: Sets the width of an element.</li>
+    <li>max-width: Sets the maximum width of an element.</li>
+    <li>height: Sets the height of an element.</li>
+    <li>border-radius: Sets the rounded corners of an element.</li>
+    <li>color: Sets the text color of an element.</li>
+    <li>font-size: Sets the font size of an element.</li>
+    <li>line-height: Sets the line spacing for text.</li>
+    <li>display: Sets the display behavior of an element (e.g., flex, block, inline, inline-block).</li>
+    <li>border-bottom: Sets a border at the bottom of an element.</li>
+    <li>list-style-type: Sets the list style type (e.g., none, disc).</li>
+    <li>margin-bottom: Sets the bottom margin for an element.</li>
+</ul>
+
+    <div class="project">
+        <h2><a href="timetable.html">Timetable</a></h2>
+        <img class="screenshot" src="timetableSS.png" alt="Timetable Screenshot">
+        <h3>Code:</h3>
+        <pre><code id="timetableCode">
+            &lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;Timetable&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;table   border=&quot;1&quot; bordercolor=&quot;#3c8dbc&quot; style=&quot;border-collapse: collapse;&quot;&gt;
+        
+        &lt;thead&gt;
+            &lt;tr&gt;
+                &lt;th rowspan=&quot;2&quot; bgcolor=&quot;#E2E2E2&quot;&gt;Theory&lt;/th&gt;
+                &lt;th bgcolor=&quot;#E2E2E2&quot;&gt;Start&lt;/th&gt;
+                &lt;th bgcolor=&quot;#E2E2E2&quot;&gt;08:00&lt;/th&gt;
+                &lt;th bgcolor=&quot;#E2E2E2&quot;&gt;09:00&lt;/th&gt;
+                &lt;th bgcolor=&quot;#E2E2E2&quot;&gt;10:00&lt;/th&gt;
+                &lt;th bgcolor=&quot;#E2E2E2&quot;&gt;11:00&lt;/th&gt;
+                &lt;th bgcolor=&quot;#E2E2E2&quot;&gt;12:00&lt;/th&gt;
+                &lt;th bgcolor=&quot;#E2E2E2&quot;&gt;-&lt;/th&gt;
+                &lt;th bgcolor=&quot;#E2E2E2&quot;&gt;Lunch&lt;/th&gt;
+                &lt;th bgcolor=&quot;#E2E2E2&quot;&gt;14:00&lt;/th&gt;
+                &lt;th bgcolor=&quot;#E2E2E2&quot;&gt;15:00&lt;/th&gt;
+                &lt;th bgcolor=&quot;#E2E2E2&quot;&gt;16:00&lt;/th&gt;
+                &lt;th bgcolor=&quot;#E2E2E2&quot;&gt;17:00&lt;/th&gt;
+                &lt;th bgcolor=&quot;#E2E2E2&quot;&gt;18:00&lt;/th&gt;
+                &lt;th bgcolor=&quot;#E2E2E2&quot;&gt;18:51&lt;/th&gt;
+                &lt;th bgcolor=&quot;#E2E2E2&quot;&gt;19:01&lt;/th&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;th bgcolor=&quot;#E2E2E2&quot;&gt;End&lt;/th&gt;
+                &lt;th bgcolor=&quot;#E2E2E2&quot;&gt;08:50&lt;/th&gt;
+                &lt;th bgcolor=&quot;#E2E2E2&quot;&gt;09:50&lt;/th&gt;
+                &lt;th bgcolor=&quot;#E2E2E2&quot;&gt;10:50&lt;/th&gt;
+                &lt;th bgcolor=&quot;#E2E2E2&quot;&gt;11:50&lt;/th&gt;
+                &lt;th bgcolor=&quot;#E2E2E2&quot;&gt;12:50&lt;/th&gt;
+                &lt;th bgcolor=&quot;#E2E2E2&quot;&gt;-&lt;/th&gt;
+                &lt;th bgcolor=&quot;#E2E2E2&quot;&gt;Lunch&lt;/th&gt;
+                &lt;th bgcolor=&quot;#E2E2E2&quot;&gt;14:50&lt;/th&gt;
+                &lt;th bgcolor=&quot;#E2E2E2&quot;&gt;15:50&lt;/th&gt;
+                &lt;th bgcolor=&quot;#E2E2E2&quot;&gt;16:50&lt;/th&gt;
+                &lt;th bgcolor=&quot;#E2E2E2&quot;&gt;17:50&lt;/th&gt;
+                &lt;th bgcolor=&quot;#E2E2E2&quot;&gt;18:50&lt;/th&gt;
+                &lt;th bgcolor=&quot;#E2E2E2&quot;&gt;19:00&lt;/th&gt;
+                &lt;th bgcolor=&quot;#E2E2E2&quot;&gt;19:50&lt;/th&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;th rowspan=&quot;2&quot; bgcolor=&quot;#E2E2E2&quot;&gt;Lab&lt;/th&gt;
+                &lt;th bgcolor=&quot;#E2E2E2&quot;&gt;Start&lt;/th&gt;
+                &lt;th bgcolor=&quot;#E2E2E2&quot;&gt;08:00&lt;/th&gt;
+                &lt;th bgcolor=&quot;#E2E2E2&quot;&gt;08:51&lt;/th&gt;
+                &lt;th bgcolor=&quot;#E2E2E2&quot;&gt;09:51&lt;/th&gt;
+                &lt;th bgcolor=&quot;#E2E2E2&quot;&gt;10:41&lt;/th&gt;
+                &lt;th bgcolor=&quot;#E2E2E2&quot;&gt;11:40&lt;/th&gt;
+                &lt;th bgcolor=&quot;#E2E2E2&quot;&gt;12:31&lt;/th&gt;
+                &lt;th bgcolor=&quot;#E2E2E2&quot;&gt;Lunch&lt;/th&gt;
+                &lt;th bgcolor=&quot;#E2E2E2&quot;&gt;14:00&lt;/th&gt;
+                &lt;th bgcolor=&quot;#E2E2E2&quot;&gt;14:51&lt;/th&gt;
+                &lt;th bgcolor=&quot;#E2E2E2&quot;&gt;15:51&lt;/th&gt;
+                &lt;th bgcolor=&quot;#E2E2E2&quot;&gt;16:41&lt;/th&gt;
+                &lt;th bgcolor=&quot;#E2E2E2&quot;&gt;17:40&lt;/th&gt;
+                &lt;th bgcolor=&quot;#E2E2E2&quot;&gt;18:31&lt;/th&gt;
+                &lt;th bgcolor=&quot;#E2E2E2&quot;&gt;-&lt;/th&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;th bgcolor=&quot;#E2E2E2&quot;&gt;End&lt;/th&gt;
+                &lt;th bgcolor=&quot;#E2E2E2&quot;&gt;08:50&lt;/th&gt;
+                &lt;th bgcolor=&quot;#E2E2E2&quot;&gt;09:40&lt;/th&gt;
+                &lt;th bgcolor=&quot;#E2E2E2&quot;&gt;10:40&lt;/th&gt;
+                &lt;th bgcolor=&quot;#E2E2E2&quot;&gt;11:30&lt;/th&gt;
+                &lt;th bgcolor=&quot;#E2E2E2&quot;&gt;12:30&lt;/th&gt;
+                &lt;th bgcolor=&quot;#E2E2E2&quot;&gt;13:20&lt;/th&gt;
+                &lt;th bgcolor=&quot;#E2E2E2&quot;&gt;Lunch&lt;/th&gt;
+                &lt;th bgcolor=&quot;#E2E2E2&quot;&gt;14:50&lt;/th&gt;
+                &lt;th bgcolor=&quot;#E2E2E2&quot;&gt;15:40&lt;/th&gt;
+                &lt;th bgcolor=&quot;#E2E2E2&quot;&gt;16:40&lt;/th&gt;
+                &lt;th bgcolor=&quot;#E2E2E2&quot;&gt;17:30&lt;/th&gt;
+                &lt;th bgcolor=&quot;#E2E2E2&quot;&gt;18:30&lt;/th&gt;
+                &lt;th bgcolor=&quot;#E2E2E2&quot;&gt;19:20&lt;/th&gt;
+                &lt;th bgcolor=&quot;#E2E2E2&quot;&gt;-&lt;/th&gt;
+            &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+           &lt;tr&gt;
+            &lt;td rowspan=&quot;2&quot; bgcolor=&quot;#E2E2E2&quot;&gt;MON&lt;/td&gt;
+            &lt;td bgcolor=&quot;#E2E2E2&quot;&gt;THEORY&lt;/td&gt;
+            &lt;td&gt;A1&lt;/td&gt;
+            &lt;td&gt;F1&lt;/td&gt;
+            &lt;td&gt;D1&lt;/td&gt;
+            &lt;td&gt;TB1&lt;/td&gt;
+            &lt;td&gt;TG1&lt;/td&gt;
+            &lt;td&gt;-&lt;/td&gt;
+            &lt;td bgcolor=&quot;#E2E2E2&quot;&gt;Lunch&lt;/td&gt;
+            &lt;td bgcolor=&quot;#FC6C85&quot;&gt;A2-BCSE204L-TH-SJT407-ALL&lt;/td&gt;
+            &lt;td bgcolor=&quot;#FC6C85&quot;&gt;F2-BCSE304L-TH-SJT-301-ALL&lt;/td&gt;
+            &lt;td bgcolor=&quot;#FC6C85&quot;&gt;D2-BMAT202L-TH-SJT-323-ALL&lt;/td&gt;
+            &lt;td bgcolor=&quot;#FC6C85&quot;&gt;TB2-BECE204L-TH-SJT315-ALL&lt;/td&gt;
+            &lt;td bgcolor=&quot;#FC6C85&quot;&gt;TG2-BCSE203E-ETH-SJT315-ALL&lt;/td&gt;
+            &lt;td&gt;-&lt;/td&gt;
+            &lt;td&gt;V3&lt;/td&gt;
+           &lt;/tr&gt;
+           &lt;tr&gt;
+            &lt;td bgcolor=&quot;#E2E2E2&quot;&gt;LAB&lt;/td&gt;
+            &lt;td&gt;L1&lt;/td&gt;
+            &lt;td&gt;L2&lt;/td&gt;
+            &lt;td&gt;L3&lt;/td&gt;
+            &lt;td&gt;L4&lt;/td&gt;
+            &lt;td bgcolor=&quot;#FC6C85&quot;&gt;L5-BMAT202P-LO-PRP118-ALL&lt;/td&gt;
+            &lt;td bgcolor=&quot;#FC6C85&quot;&gt;L6-BMAT202P-LO-PRP118-ALL&lt;/td&gt;
+            &lt;td bgcolor=&quot;#E2E2E2&quot;&gt;Lunch&lt;/td&gt;
+            &lt;td&gt;L31&lt;/td&gt;
+            &lt;td&gt;L32&lt;/td&gt;
+            &lt;td&gt;L33&lt;/td&gt;
+            &lt;td&gt;L34&lt;/td&gt;
+            &lt;td&gt;L35&lt;/td&gt;
+            &lt;td&gt;L36&lt;/td&gt;
+            &lt;td&gt;-&lt;/td&gt;
+           &lt;/tr&gt;
+           &lt;tr&gt;
+            &lt;td rowspan=&quot;2&quot; bgcolor=&quot;#E2E2E2&quot;&gt;TUE&lt;/td&gt;
+            &lt;td bgcolor=&quot;#E2E2E2&quot;&gt;THEORY&lt;/td&gt;
+            &lt;td&gt;B1&lt;/td&gt;
+            &lt;td&gt;G1L&lt;/td&gt;
+            &lt;td&gt;E1&lt;/td&gt;
+            &lt;td&gt;TC1&lt;/td&gt;
+            &lt;td&gt;TAA1&lt;/td&gt;
+            &lt;td&gt;-&lt;/td&gt;
+            &lt;td bgcolor=&quot;#E2E2E2&quot;&gt;Lunch&lt;/td&gt;
+            &lt;td bgcolor=&quot;#FC6C85&quot;&gt;B2-BECE204L-TH-SJT315-ALL&lt;/td&gt;
+            &lt;td&gt;G2&lt;/td&gt;
+            &lt;td bgcolor=&quot;#FC6C85&quot;&gt;E2-BSTS102P-SS-SJT401-ALL&lt;/td&gt;
+            &lt;td bgcolor=&quot;#FC6C85&quot;&gt;TC2-BCSE205L-TH-SJT402-ALL&lt;/td&gt;
+            &lt;td&gt;TAA2&lt;/td&gt;
+            &lt;td&gt;-&lt;/td&gt;
+            &lt;td&gt;V4&lt;/td&gt;
+           &lt;/tr&gt;
+           &lt;tr&gt;
+            &lt;td bgcolor=&quot;#E2E2E2&quot;&gt;LAB&lt;/td&gt;
+            &lt;td&gt;L7&lt;/td&gt;
+            &lt;td&gt;L8&lt;/td&gt;
+            &lt;td bgcolor=&quot;#FC6C85&quot;&gt;L9-BCSE203E-ELA-SJT319-ALL&lt;/td&gt;
+            &lt;td bgcolor=&quot;#FC6C85&quot;&gt;L10-BCSE203E-ELA-SJT319-ALL&lt;/td&gt;
+            &lt;td bgcolor=&quot;#FC6C85&quot;&gt;L11-BCSE204P-LO-SJT318-ALL&lt;/td&gt;
+            &lt;td bgcolor=&quot;#FC6C85&quot;&gt;L12-BCSE204P-LO-SJT318-ALL&lt;/td&gt;
+            &lt;td bgcolor=&quot;#E2E2E2&quot;&gt;Lunch&lt;/td&gt;
+            &lt;td&gt;L37&lt;/td&gt;
+            &lt;td&gt;L38&lt;/td&gt;
+            &lt;td&gt;L39&lt;/td&gt;
+            &lt;td&gt;L40&lt;/td&gt;
+            &lt;td&gt;L41&lt;/td&gt;
+            &lt;td&gt;L42&lt;/td&gt;
+            &lt;td&gt;-&lt;/td&gt;
+           &lt;/tr&gt;
+           &lt;tr&gt;
+            &lt;td rowspan=&quot;2&quot; bgcolor=&quot;#E2E2E2&quot;&gt;WED&lt;/td&gt;
+            &lt;td bgcolor=&quot;#E2E2E2&quot;&gt;THEORY&lt;/td&gt;
+            &lt;td&gt;C1&lt;/td&gt;
+            &lt;td&gt;A1&lt;/td&gt;
+            &lt;td&gt;F1&lt;/td&gt;
+            &lt;td&gt;V1&lt;/td&gt;
+            &lt;td&gt;V2&lt;/td&gt;
+            &lt;td&gt;-&lt;/td&gt;
+            &lt;td bgcolor=&quot;#E2E2E2&quot;&gt;Lunch&lt;/td&gt;
+            &lt;td bgcolor=&quot;#FC6C85&quot;&gt;C2-BCSE205L-TH-SJT402-ALL&lt;/td&gt;
+            &lt;td bgcolor=&quot;#FC6C85&quot;&gt;A2-BCSE204L-TH-SJT407-ALL&lt;/td&gt;
+            &lt;td bgcolor=&quot;#FC6C85&quot;&gt;F2-BCSE204L-TH-SJT407-ALL&lt;/td&gt;
+            &lt;td bgcolor=&quot;#FC6C85&quot;&gt;TD2-BMAT202LTH-SJT323-ALL&lt;/td&gt;
+            &lt;td&gt;TBB2&lt;/td&gt;
+            &lt;td&gt;-&lt;/td&gt;
+            &lt;td&gt;V5&lt;/td&gt;
+           &lt;/tr&gt;
+           &lt;tr&gt;
+            &lt;td bgcolor=&quot;#E2E2E2&quot;&gt;LAB&lt;/td&gt;
+            &lt;td&gt;L13&lt;/td&gt;
+            &lt;td&gt;L14&lt;/td&gt;
+            &lt;td bgcolor=&quot;#FC6C85&quot;&gt;L15-BECE204P-LO-PRP136-ALL&lt;/td&gt;
+            &lt;td bgcolor=&quot;#FC6C85&quot;&gt;L16-BECE204P-LO-PRP136-ALL&lt;/td&gt;
+            &lt;td&gt;L17&lt;/td&gt;
+            &lt;td&gt;L18&lt;/td&gt;
+            &lt;td bgcolor=&quot;#E2E2E2&quot;&gt;Lunch&lt;/td&gt;
+            &lt;td&gt;L43&lt;/td&gt;
+            &lt;td&gt;L44&lt;/td&gt;
+            &lt;td&gt;L45&lt;/td&gt;
+            &lt;td&gt;L46&lt;/td&gt;
+            &lt;td&gt;L47&lt;/td&gt;
+            &lt;td&gt;L48&lt;/td&gt;
+            &lt;td&gt;-&lt;/td&gt;
+           &lt;/tr&gt;
+           &lt;tr&gt;
+            &lt;td rowspan=&quot;2&quot; bgcolor=&quot;#E2E2E2&quot;&gt;THU&lt;/td&gt;
+            &lt;td bgcolor=&quot;#E2E2E2&quot;&gt;THEORY&lt;/td&gt;
+            &lt;td&gt;D1&lt;/td&gt;
+            &lt;td&gt;B1&lt;/td&gt;
+            &lt;td&gt;G1&lt;/td&gt;
+            &lt;td&gt;TE1&lt;/td&gt;
+            &lt;td&gt;TCC1&lt;/td&gt;
+            &lt;td&gt;-&lt;/td&gt;
+            &lt;td bgcolor=&quot;#E2E2E2&quot;&gt;Lunch&lt;/td&gt;
+            &lt;td bgcolor=&quot;#FC6C85&quot;&gt;D2-BMAT202L-TH-SJT-323-ALL&lt;/td&gt;
+            &lt;td bgcolor=&quot;#FC6C85&quot;&gt;B2-BECE204L-TH-SJT315-ALL&lt;/td&gt;
+            &lt;td&gt;G2&lt;/td&gt;
+            &lt;td bgcolor=&quot;#FC6C85&quot;&gt;TE2-BSTS102P-SS-SJT401-ALL&lt;/td&gt;
+            &lt;td&gt;TCC2&lt;/td&gt;
+            &lt;td&gt;-&lt;/td&gt;
+            &lt;td&gt;V6&lt;/td&gt;
+           &lt;/tr&gt;
+           &lt;tr&gt;
+            &lt;td bgcolor=&quot;#E2E2E2&quot;&gt;LAB&lt;/td&gt;
+            &lt;td bgcolor=&quot;#FC6C85&quot;&gt;L19-BCSE203E-ELA-SJT319-ALL&lt;/td&gt;
+            &lt;td bgcolor=&quot;#FC6C85&quot;&gt;L20-BCSE203E-ELA-SJT319-ALL&lt;/td&gt;
+            &lt;td&gt;L21&lt;/td&gt;
+            &lt;td&gt;L22&lt;/td&gt;
+            &lt;td&gt;L23&lt;/td&gt;
+            &lt;td&gt;L24&lt;/td&gt;
+            &lt;td bgcolor=&quot;#E2E2E2&quot;&gt;Lunch&lt;/td&gt;
+            &lt;td&gt;L49&lt;/td&gt;
+            &lt;td&gt;L50&lt;/td&gt;
+            &lt;td&gt;L51&lt;/td&gt;
+            &lt;td&gt;L52&lt;/td&gt;
+            &lt;td&gt;L53&lt;/td&gt;
+            &lt;td&gt;L54&lt;/td&gt;
+            &lt;td&gt;-&lt;/td&gt;
+           &lt;/tr&gt;
+           &lt;tr&gt;
+            &lt;td rowspan=&quot;2&quot; bgcolor=&quot;#E2E2E2&quot;&gt;FRI&lt;/td&gt;
+            &lt;td bgcolor=&quot;#E2E2E2&quot;&gt;THEORY&lt;/td&gt;
+            &lt;td&gt;E1&lt;/td&gt;
+            &lt;td&gt;C1&lt;/td&gt;
+            &lt;td&gt;TA1&lt;/td&gt;
+            &lt;td&gt;TF1&lt;/td&gt;
+            &lt;td&gt;TD1&lt;/td&gt;
+            &lt;td&gt;-&lt;/td&gt;
+            &lt;td bgcolor=&quot;#E2E2E2&quot;&gt;Lunch&lt;/td&gt;
+            &lt;td bgcolor=&quot;#FC6C85&quot;&gt;E2-BSTS102P-SS-SJT401-ALL&lt;/td&gt;
+            &lt;td bgcolor=&quot;#FC6C85&quot;&gt;C2-BCSE-205L-TH-SJT404-ALL&lt;/td&gt;
+            &lt;td bgcolor=&quot;#FC6C85&quot;&gt;TA2-BCSE204L-TH-SJT407-ALL&lt;/td&gt;
+            &lt;td bgcolor=&quot;#FC6C85&quot;&gt;TF2-BCSE304L-TH-SJT-301-ALL&lt;/td&gt;
+            &lt;td&gt;TDD2&lt;/td&gt;
+            &lt;td&gt;-&lt;/td&gt;
+            &lt;td&gt;V7&lt;/td&gt;
+           &lt;/tr&gt;
+           &lt;tr&gt;
+            &lt;td bgcolor=&quot;#E2E2E2&quot;&gt;LAB&lt;/td&gt;
+            &lt;td&gt;L25&lt;/td&gt;
+            &lt;td&gt;L26&lt;/td&gt;
+            &lt;td&gt;L27&lt;/td&gt;
+            &lt;td&gt;L28&lt;/td&gt;
+            &lt;td&gt;L29&lt;/td&gt;
+            &lt;td&gt;L30&lt;/td&gt;
+            &lt;td bgcolor=&quot;#E2E2E2&quot;&gt;Lunch&lt;/td&gt;
+            &lt;td&gt;L55&lt;/td&gt;
+            &lt;td&gt;L56&lt;/td&gt;
+            &lt;td&gt;L57&lt;/td&gt;
+            &lt;td&gt;L58&lt;/td&gt;
+            &lt;td&gt;L59&lt;/td&gt;
+            &lt;td&gt;L60&lt;/td&gt;
+            &lt;td&gt;-&lt;/td&gt;
+           &lt;/tr&gt;
+           &lt;tr&gt;
+            &lt;td rowspan=&quot;2&quot; bgcolor=&quot;#E2E2E2&quot;&gt;SAT&lt;/td&gt;
+            &lt;td bgcolor=&quot;#E2E2E2&quot;&gt;THEORY&lt;/td&gt;
+            &lt;td&gt;V8&lt;/td&gt;
+            &lt;td&gt;X11&lt;/td&gt;
+            &lt;TD&gt;X12&lt;/TD&gt;
+            &lt;td&gt;Y11&lt;/td&gt;
+            &lt;td&gt;Y12&lt;/td&gt;
+            &lt;td&gt;-&lt;/td&gt;
+            &lt;td bgcolor=&quot;#E2E2E2&quot;&gt;Lunch&lt;/td&gt;
+            &lt;td&gt;X21&lt;/td&gt;
+            &lt;td&gt;Z21&lt;/td&gt;
+            &lt;td&gt;Y21&lt;/td&gt;
+            &lt;td&gt;W21&lt;/td&gt;
+            &lt;td&gt;W22&lt;/td&gt;
+            &lt;td&gt;-&lt;/td&gt;
+            &lt;td&gt;V9&lt;/td&gt;
+           &lt;/tr&gt;
+           &lt;tr&gt;
+            &lt;td bgcolor=&quot;#E2E2E2&quot;&gt;LAB&lt;/td&gt;
+            &lt;td&gt;L71&lt;/td&gt;
+            &lt;td&gt;L72&lt;/td&gt;
+            &lt;td&gt;L73&lt;/td&gt;
+            &lt;td&gt;L74&lt;/td&gt;
+            &lt;td&gt;L75&lt;/td&gt;
+            &lt;td&gt;L76&lt;/td&gt;
+            &lt;td bgcolor=&quot;#E2E2E2&quot;&gt;Lunch&lt;/td&gt;
+            &lt;td&gt;L77&lt;/td&gt;
+            &lt;td&gt;L78&lt;/td&gt;
+            &lt;td&gt;L79&lt;/td&gt;
+            &lt;td&gt;L80&lt;/td&gt;
+            &lt;td&gt;L81&lt;/td&gt;
+            &lt;td&gt;L82&lt;/td&gt;
+            &lt;td&gt;-&lt;/td&gt;
+           &lt;/tr&gt;
+           &lt;tr&gt;
+            &lt;td rowspan=&quot;2&quot; bgcolor=&quot;#E2E2E2&quot;&gt;SUN&lt;/td&gt;
+            &lt;td bgcolor=&quot;#E2E2E2&quot;&gt;THEORY&lt;/td&gt;
+            &lt;td&gt;V10&lt;/td&gt;
+            &lt;td&gt;Y11&lt;/td&gt;
+            &lt;td&gt;Y12&lt;/td&gt;
+            &lt;td&gt;X11&lt;/td&gt;
+            &lt;td&gt;X12&lt;/td&gt;
+            &lt;td&gt;-&lt;/td&gt;
+            &lt;td bgcolor=&quot;#E2E2E2&quot;&gt;Lunch&lt;/td&gt;
+            &lt;td &gt;Y21&lt;/td&gt;
+            &lt;td &gt;Z21&lt;/td&gt;
+            &lt;td &gt;X21&lt;/td&gt;
+            &lt;td &gt;W21&lt;/td&gt;
+            &lt;td &gt;W22&lt;/td&gt;
+            &lt;td&gt;-&lt;/td&gt;
+            &lt;td&gt;V11&lt;/td&gt;
+           &lt;/tr&gt;
+           &lt;tr&gt;
+            &lt;td bgcolor=&quot;#E2E2E2&quot;&gt;LAB&lt;/td&gt;
+            &lt;td&gt;L83&lt;/td&gt;
+            &lt;td&gt;L84&lt;/td&gt;
+            &lt;td&gt;L85&lt;/td&gt;
+            &lt;td&gt;L86&lt;/td&gt;
+            &lt;td&gt;L87&lt;/td&gt;
+            &lt;td&gt;L88&lt;/td&gt;
+            &lt;td bgcolor=&quot;#E2E2E2&quot;&gt;Lunch&lt;/td&gt;
+            &lt;td&gt;L89&lt;/td&gt;
+            &lt;td&gt;L90&lt;/td&gt;
+            &lt;td&gt;L91&lt;/td&gt;
+            &lt;td&gt;L92&lt;/td&gt;
+            &lt;td&gt;L93&lt;/td&gt;
+            &lt;td&gt;L94&lt;/td&gt;
+            &lt;td&gt;-&lt;/td&gt;
+           &lt;/tr&gt;
+        &lt;/tbody&gt;
+    &lt;/table&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+        </code></pre>
+
+        <h3>HTML Components:</h3>
+        <ul>
+            <li>!DOCTYPE html: Declares the document type and version of HTML.</li>
+            <li>html: The root element of the HTML document.</li>
+            <li>head: Contains meta-information about the HTML document.</li>
+            <li>meta: Provides metadata about the HTML document (charset, viewport).</li>
+            <li>title: Specifies the title of the HTML page.</li>
+            <li>body: Contains the visible page content.</li>
+            <li>table: Defines an HTML table.</li>
+            <li>thead: Groups the header content in a table.</li>
+            <li>tbody: Groups the body content in a table.</li>
+            <li>tr: Defines a row in a table.</li>
+            <li>th: Defines a header cell in a table.</li>
+            <li>td: Defines a data cell in a table.</li>
+        </ul>
+
+        <h3>CSS Properties (Inline Styles):</h3>
+        <ul>
+            <li>border: Sets the border of the table.</li>
+            <li>bordercolor: Sets the color of the table border.</li>
+            <li>border-collapse: Collapses the table borders into a single border.</li>
+            <li>bgcolor: Sets the background color of a table cell (deprecated, but used in your code).</li>
+            <li>rowspan: Makes a cell span multiple rows.</li>
+        </ul>
+    </div>
+
+    <div class="project">
+        <h2><a href="bday.html">Birthday Party Invitation (Animated)</a></h2>
+        <img class="screenshot" src="bdaySS.png" alt="Birthday Invitation Screenshot">
+        <h3>Code:</h3>
+        <pre><code id="birthdayCode">
+            &lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;Party Invitation&lt;/title&gt;
+    &lt;style&gt;
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom, #ffecd2, #fcb69f);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: visible;
+        }
+
+        .card {
+            width: 90%;
+            max-width: 700px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            overflow: visible;
+            text-align: center;
+            position: relative;
+        }
+
+        .card .header {
+            background: linear-gradient(to right, #ff6a00, #ee0979);
+            color: white;
+            padding: 30px 20px;
+            font-size: 36px;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .card .header span {
+            font-size: 50px;
+            display: block;
+            margin: 10px 0;
+            font-family: 'Brush Script MT', cursive;
+        }
+
+        .card .content {
+            padding: 20px;
+            font-size: 18px;
+            line-height: 1.6;
+            color: #444;
+        }
+
+        .balloons {
+            position: absolute;
+            width: 120%;
+            height: 120%;
+            top: -50px;
+            left: -10%;
+            z-index: 1;
+            overflow: visible;
+        }
+
+        .balloons img {
+            position: absolute;
+            width: 100px;
+            animation: float 5s ease-in-out infinite;
+        }
+
+        .balloons img:nth-child(1) {
+            top: 10%;
+            left: 0%;
+            animation-delay: 0s;
+        }
+
+        .balloons img:nth-child(2) {
+            top: 20%;
+            right: 0%;
+            animation-delay: 1s;
+        }
+
+        .balloons img:nth-child(3) {
+            bottom: 20%;
+            left: -5%;
+            animation-delay: 2s;
+        }
+
+        .balloons img:nth-child(4) {
+            bottom: 10%;
+            right: -5%;
+            animation-delay: 3s;
+        }
+
+        @keyframes float {
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;div class=&quot;card&quot;&gt;
+        &lt;div class=&quot;header&quot;&gt;
+            &lt;span&gt;You're Invited!&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;content&quot;&gt;
+            Join us for a party celebrating Rudra's 21st Birthday!&lt;br&gt;&lt;br&gt;
+            Date: Monday, September 15th, 2025&lt;br&gt;
+            Time: 7:00 PM&lt;br&gt;
+            Location: The Grand Ballroom, 123 Main Street&lt;br&gt;&lt;br&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;balloons&quot;&gt;
+            &lt;img src=&quot;balloon1.png&quot; alt=&quot;Balloon&quot;&gt;
+            &lt;img src=&quot;balloon1.png&quot; alt=&quot;Balloon&quot;&gt;
+            &lt;img src=&quot;balloon1.png&quot; alt=&quot;Balloon&quot;&gt;
+            &lt;img src=&quot;balloon1.png&quot; alt=&quot;Balloon&quot;&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+        </code></pre>
+
+        <h3>HTML Components:</h3>
+        <ul>
+            <li>!DOCTYPE html: Declares the document type and version of HTML.</li>
+            <li>html: The root element of the HTML document.</li>
+            <li>head: Contains meta-information about the HTML document.</li>
+            <li>meta: Provides metadata about the HTML document (charset, viewport).</li>
+            <li>title: Specifies the title of the HTML page.</li>
+            <li>body: Contains the visible page content.</li>
+            <li>div: Defines a division or section in an HTML document.</li>
+            <li>span: A generic inline container for phrasing content.</li>
+            <li>br: Inserts a single line break.</li>
+            <li>img: Embeds an image in the HTML document.</li>
+        </ul>
+
+        <h3>CSS Properties:</h3>
+        <ul>
+            <li>margin: Sets the outer margin of an element.</li>
+            <li>padding: Sets the inner padding of an element.</li>
+            <li>font-family: Specifies the font family for text.</li>
+            <li>background: Sets the background of an element (can be color, image, or gradient).</li>
+            <li>linear-gradient: Creates a linear gradient background.</li>
+            <li>height: Sets the height of an element.</li>
+            <li>display: Specifies the display behavior of an element (e.g., flex).</li>
+            <li>justify-content: Aligns items along the main axis of a flex container.</li>
+            <li>align-items: Aligns items along the cross axis of a flex container.</li>
+            <li>overflow: Specifies what happens to content that overflows an element's box.</li>
+            <li>width: Sets the width of an element.</li>
+            <li>max-width: Sets the maximum width of an element.</li>
+            <li>border-radius: Sets the rounded corners of an element.</li>
+            <li>box-shadow: Adds a shadow to an element.</li>
+            <li>text-align: Specifies the horizontal alignment of text.</li>
+            <li>position: Specifies the positioning method used for an element (e.g., absolute, relative).</li>
+            <li>top: Sets the vertical position of a positioned element.</li>
+            <li>left: Sets the horizontal position of a positioned element.</li>
+            <li>right: Sets the horizontal position of a positioned element.</li>
+            <li>bottom: Sets the vertical position of a positioned element.</li>
+            <li>z-index: Specifies the stack order of an element.</li>
+            <li>font-size: Sets the size of the font.</li>
+            <li>font-weight: Sets the weight (boldness) of the font.</li>
+            <li>text-shadow: Adds a shadow to text.</li>
+            <li>line-height: Sets the line height (vertical spacing between lines of text).</li>
+            <li>color: Sets the text color.</li>
+            <li>animation: A shorthand property for setting animation properties.</li>
+            <li>animation-delay: Specifies a delay for the start of an animation.</li>
+            <li>transform: Applies a 2D or 3D transformation to an element.</li>
+            <li>translateY: Moves an element vertically.</li>
+            <li>@keyframes: Specifies the animation code.</li>
+        </ul>
+    </div>
+
+    <div class="project">
+        <h2><a href="riviera.html">Riveria Event Registration</a></h2>
+        <img class="screenshot" src="rivieraSS.png" alt="Riveria Registration Screenshot">
+        <h3>Code:</h3>
+        <pre><code id="rivieraCode">
+            &lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;survival.exe - Riviera 2025&lt;/title&gt;
+    &lt;link href=&quot;https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&amp;display=swap&quot; rel=&quot;stylesheet&quot;&gt;
+    &lt;style&gt;
+        body {
+            background-color: #000;
+            color: white;
+            font-family: 'Orbitron', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #111;
+            position: relative;
+        }
+
+        header img {
+            height: 50px;
+            margin: 0 10px;
+        }
+
+        .logo-center {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        nav {
+            margin-right: 20px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .event-details {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            align-items: flex-start;
+        }
+
+        .image-container img {
+            max-width: 400px;
+            height: auto;
+            width: 100%;
+            object-fit: contain;
+        }
+
+        .text-content {
+            flex: 1;
+        }
+
+        .text-content h1 {
+            margin-top: 0;
+        }
+
+        .club,
+        .price,
+        .gst {
+            color: #8000ff;
+        }
+
+        .price {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        .per-person {
+            font-size: 0.8em;
+            color: lightgray;
+        }
+
+        .description {
+            margin-bottom: 20px;
+        }
+
+        .details-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .detail-item {
+            border: 1px solid white;
+            padding: 10px;
+            height: 5vw;
+        }
+
+        .bottom-bar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #222;
+            z-index: 100;
+        }
+
+        .bottom-bar-content {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            align-items: center;
+            max-width: 100%; /* Changed to 100% */
+            margin: 0 auto;
+            border: 2px solid white;
+            text-align: center; /* Added text alignment */
+        }
+
+        .bottom-bar-content &gt; div {
+            padding: 12px 0;
+            border-right: 2px solid white;
+            white-space: nowrap;
+        }
+
+        .bottom-bar-content &gt; div:last-child {
+            border-right: none;
+        }
+
+        .bottom-bar button {
+            background: linear-gradient(45deg, #ff00ff, #8000ff);
+            border: 2px solid white;
+            color: white;
+            padding: 14px 35px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 50px;
+            width: 75%;
+            margin: 0 auto;
+            transition: 0.3s ease-in-out;
+        }
+
+        .bottom-bar button:hover {
+            background: linear-gradient(45deg, #8000ff, #ff00ff);
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 768px) {
+            .bottom-bar-content {
+                grid-template-columns: 1fr;
+                flex-direction: column;
+            }
+
+            .bottom-bar-content &gt; div {
+                border-right: none;
+                border-bottom: 2px solid white;
+                padding: 10px 0;
+            }
+
+            .bottom-bar-content &gt; div:last-child {
+                border-bottom: none;
+            }
+
+            .bottom-bar button {
+                width: 100%;
+            }
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;div class=&quot;logo&quot;&gt;
+            &lt;img src=&quot;VIT_light.png&quot; alt=&quot;VIT Logo&quot;&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;logo-center&quot;&gt;
+            &lt;img src=&quot;riviera.png&quot; alt=&quot;Riviera Logo&quot;&gt;
+        &lt;/div&gt;
+        &lt;nav&gt;
+            &lt;a href=&quot;#&quot;&gt;MENU&lt;/a&gt;
+        &lt;/nav&gt;
+    &lt;/header&gt;
+    &lt;main&gt;
+        &lt;section class=&quot;event-details&quot;&gt;
+            &lt;div class=&quot;image-container&quot;&gt;
+                &lt;img src=&quot;SURVIVAL.png&quot; alt=&quot;Squid Game Image&quot;&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;text-content&quot;&gt;
+                &lt;h1&gt;SURVIVAL.EXE&lt;/h1&gt;
+                &lt;p class=&quot;club&quot;&gt;SCRS Chapter&lt;/p&gt;
+                &lt;p class=&quot;price&quot;&gt;₹100 &lt;span class=&quot;per-person&quot;&gt;(per person)&lt;/span&gt;&lt;/p&gt;
+                &lt;p class=&quot;gst&quot;&gt;+18% GST&lt;/p&gt;
+                &lt;p class=&quot;description&quot;&gt;Survival.exe &ndash; The Ultimate Coding Challenge &lt;br&gt;Experience the thrill of coding like never before with Survival.exe, a Squid Game-inspired elimination-based competition. Over 1-2 days, face a series of dynamic challenges designed to test your coding skills, problem-solving, and adaptability under pressure. With each round more intense than the last, only the sharpest and fastest will survive to the end. Perfect for both beginners and seasoned coders, this event promises high-energy competition, real-world coding scenarios, and a chance to prove your mettle. &lt;/p&gt;
+                &lt;p class=&quot;tagline&quot;&gt;Think you have what it takes to outlast the rest? Join now and code your way to victory!&lt;/p&gt;
+                &lt;div class=&quot;details-grid&quot;&gt;
+                    &lt;div class=&quot;detail-item&quot;&gt;
+                        &lt;p class=&quot;detail-label&quot;&gt;TEAM SIZE&lt;/p&gt;
+                        &lt;p class=&quot;detail-value&quot;&gt;2-4 members&lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;detail-item&quot;&gt;
+                        &lt;p class=&quot;detail-label&quot;&gt;SLOTS&lt;/p&gt;
+                        &lt;p class=&quot;detail-value&quot;&gt;Rajaji Hall | 9:00 AM - 5:00 PM IST | Feb 08&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/section&gt;
+        &lt;section class=&quot;bottom-bar&quot;&gt;
+            &lt;div class=&quot;bottom-bar-content&quot;&gt;
+                &lt;div&gt;SURVIVAL.EXE&lt;br&gt;&lt;span class=&quot;club&quot;&gt;SCRS Chapter&lt;/span&gt;&lt;/div&gt;
+                &lt;div&gt;Feb 08&lt;/div&gt;
+                &lt;div&gt;9:00 AM - 5:00 PM&lt;/div&gt;
+                &lt;div&gt;₹100/-&lt;/div&gt;
+                &lt;div&gt;&lt;button&gt;REGISTER SOON&lt;/button&gt;&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/section&gt;
+    &lt;/main&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+        </code></pre>
+
+        <h3>HTML Components:</h3>
+        <ul>
+            <li>!DOCTYPE html: Declares the document type and version of HTML.</li>
+            <li>html: The root element of the HTML document.</li>
+            <li>head: Contains meta-information about the HTML document.</li>
+            <li>meta: Provides metadata about the HTML document (charset, viewport).</li>
+            <li>title: Specifies the title of the HTML page.</li>
+            <li>link: Links an external resource (like a stylesheet or font).</li>
+            <li>style: Contains inline CSS styles for the document.</li>
+            <li>body: Contains the visible page content.</li>
+            <li>header: Represents a header section.</li>
+            <li>div: Defines a division or section.</li>
+            <li>img: Embeds an image.</li>
+            <li>nav: Represents a navigation section.</li>
+            <li>a: Defines a hyperlink.</li>
+            <li>main: Represents the main content section.</li>
+            <li>section: Defines a thematic section.</li>
+            <li>p: Defines a paragraph.</li>
+            <li>button: Defines a clickable button.</li>
+        </ul>
+
+        <h3>CSS Properties:</h3>
+        <ul>
+            <li>background-color: Sets the background color.</li>
+            <li>color: Sets the text color.</li>
+            <li>font-family: Specifies the font family.</li>
+            <li>margin: Sets the outer margin.</li>
+            <li>padding: Sets the inner padding.</li>
+            <li>display: Specifies the display behavior (e.g., flex, grid).</li>
+            <li>justify-content: Aligns items along the main axis (flexbox).</li>
+            <li>align-items: Aligns items along the cross axis (flexbox).</li>
+            <li>position: Specifies the positioning method (e.g., absolute, relative, fixed).</li>
+            <li>top: Sets the vertical position.</li>
+            <li>left: Sets the horizontal position.</li>
+            <li>right: Sets the horizontal position.</li>
+            <li>max-width: Sets the maximum width.</li>
+            <li>height: Sets the height.</li>
+            <li>object-fit: Specifies how an image or video should be resized to fit its container.</li>
+            <li>flex: Sets the flex properties.</li>
+            <li>flex-wrap: Sets whether flex items should wrap.</li>
+            <li>grid-template-columns: Defines the columns in a grid layout.</li>
+            <li>gap: Sets the gap between grid items.</li>
+            <li>border: Sets the border.</li>
+            <li>z-index: Specifies the stack order.</li>
+            <li>text-decoration: Adds or removes text decorations.</li>
+            <li>font-size: Sets the font size.</li>
+            <li>font-weight: Sets the font weight.</li>
+            <li>line-height: Sets the line height.</li>
+            <li>white-space: Controls how white space is handled.</li>
+            <li>border-right: Sets the right border.</li>
+            <li>border-bottom: Sets the bottom border.</li>
+            <li>transition: Defines a smooth transition.</li>
+            <li>cursor: Specifies the cursor style.</li>
+            <li>border-radius: Sets the border radius.</li>
+            <li>transform: Applies transformations.</li>
+            <li>scale: Scales an element.</li>
+            <li>margin: 0 auto; Centers an element horizontally.</li>
+            <li>text-align: Aligns text horizontally.</li>
+            <li>background: Sets the background (shorthand).</li>
+            <li>linear-gradient: Creates a linear gradient background.</li>
+        </ul>
+    </div>
+
+    <div class="project">
+        <h2><a href="ration/update.html">Ration Card Updation</a></h2>
+        <img class="screenshot" src="rationSS.png" alt="Ration Card Updation Screenshot">
+        <h3>Code:</h3>
+        <h3>Update Page:</h3>
+        <pre><code id="rationCode">
+            &lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+    &lt;title&gt;Update Ration Card&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;
+    &lt;style&gt;
+        /* Styles specific to update.html */
+        #update-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            /* Responsive grid */
+            gap: 20px;
+            padding: 20px;
+        }
+
+        #update-options a {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            border-width: 2px;
+            text-align: center;
+            min-height: 150px;
+            /* Set a minimum height for consistent sizing */
+        }
+
+        /* Example of adding icons (you'll need to provide the actual icons) */
+        .address-icon::before {
+            content: &quot;&quot;;
+            display: block;
+            width: 50px;
+            height: 50px;
+            background-image: url(&quot;address.png&quot;);
+            /* Path to address icon */
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin-bottom: 10px;
+        }
+
+        .member-icon::before {
+            content: &quot;&quot;;
+            display: block;
+            width: 50px;
+            height: 50px;
+            background-image: url(&quot;member.png&quot;);
+            /* Path to member icon */
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin-bottom: 10px;
+        }
+
+        .head-icon::before {
+            content: &quot;&quot;;
+            display: block;
+            width: 50px;
+            height: 50px;
+            background-image: url(&quot;head.png&quot;);
+            /* Path to head icon */
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin-bottom: 10px;
+        }
+
+        .contact-icon::before {
+            content: &quot;&quot;;
+            display: block;
+            width: 50px;
+            height: 50px;
+            background-image: url(&quot;contact.png&quot;);
+            /* Path to contact icon */
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin-bottom: 10px;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;header id=&quot;header&quot;&gt;
+        &lt;img src=&quot;flag.png&quot; id=&quot;navbar&quot; alt=&quot;Indian Flag&quot;&gt; 
+        &lt;h1 width = &quot;80vw&quot;&gt;National Food Security Portal&lt;/h1&gt; 
+        &lt;img src=&quot;emblem.png&quot; id=&quot;navbar&quot; alt=&quot;emblem&quot;&gt;
+    &lt;/header&gt;
+    &lt;h1&gt;Update Existing Ration Card&lt;/h1&gt;
+    &lt;div id=&quot;update-options&quot;&gt;
+        &lt;a href=&quot;address.html&quot; class=&quot;address-icon&quot;&gt;Change Address&lt;/a&gt;
+        &lt;a href=&quot;member.html&quot; class=&quot;member-icon&quot;&gt;Add/Remove Family Member&lt;/a&gt;
+        &lt;a href=&quot;head.html&quot; class=&quot;head-icon&quot;&gt;Change Head of Family&lt;/a&gt;
+        &lt;a href=&quot;contact.html&quot; class=&quot;contact-icon&quot;&gt;Update Contact Details&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+        </code></pre>
+
+        <h3>Contact Page:</h3>
+        <pre><code id="rationCode">
+            &lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;
+    &lt;title&gt;Update Contact Details&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div class = &quot;message&quot;&gt;&lt;/div&gt;
+    &lt;header id=&quot;header&quot;&gt;
+        &lt;img src=&quot;flag.png&quot; alt=&quot;Indian Flag&quot;&gt; &lt;h1&gt;National Food Security Portal&lt;/h1&gt; &lt;img src=&quot;emblem.png&quot; alt=&quot;emblem&quot;&gt;
+    &lt;/header&gt;
+    &lt;h1&gt;Update Contact Details&lt;/h1&gt;
+    &lt;form&gt;
+        &lt;label for=&quot;phone&quot;&gt;Phone Number:&lt;/label&gt;&lt;br&gt;
+        &lt;input type=&quot;tel&quot; id=&quot;phone&quot; name=&quot;phone&quot;&gt;&lt;br&gt;&lt;br&gt;
+
+        &lt;label for=&quot;email&quot;&gt;Email Address:&lt;/label&gt;&lt;br&gt;
+        &lt;input type=&quot;email&quot; id=&quot;email&quot; name=&quot;email&quot;&gt;&lt;br&gt;&lt;br&gt;
+
+        &lt;button class=&quot;submit&quot;&gt;Submit&lt;/button&gt;
+    &lt;/form&gt;
+    &lt;a href=&quot;update.html&quot;&gt;Back&lt;/a&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+        </code></pre>
+
+        <h3>Head Change Page:</h3>
+        <pre><code id="rationCode">
+            &lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;
+    &lt;title&gt;Change Head of Family&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header id=&quot;header&quot;&gt;
+        &lt;img src=&quot;flag.png&quot; alt=&quot;Indian Flag&quot;&gt; &lt;h1&gt;National Food Security Portal&lt;/h1&gt; &lt;img src=&quot;emblem.png&quot; alt=&quot;emblem&quot;&gt;
+    &lt;/header&gt;
+    &lt;h1&gt;Change Head of Family&lt;/h1&gt;
+    &lt;form&gt;
+        &lt;label for=&quot;new_head&quot;&gt;Select New Head of Family:&lt;/label&gt;&lt;br&gt;
+        &lt;select id=&quot;new_head&quot; name=&quot;new_head&quot;&gt;
+            &lt;option value=&quot;member1&quot;&gt;Member 1&lt;/option&gt;
+            &lt;option value=&quot;member2&quot;&gt;Member 2&lt;/option&gt;
+            &lt;/select&gt;&lt;br&gt;&lt;br&gt;
+        &lt;button class=&quot;submit&quot;&gt;Submit&lt;/button&gt;
+    &lt;/form&gt;
+    &lt;a href=&quot;update.html&quot;&gt;Back&lt;/a&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+        </code></pre>
+
+        <h3>Member Page:</h3>
+        <pre><code id="rationCode">
+            &lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;
+    &lt;title&gt;Add/Remove Family Member&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header id=&quot;header&quot;&gt;
+        &lt;img src=&quot;flag.png&quot; alt=&quot;Indian Flag&quot;&gt; &lt;h1&gt;National Food Security Portal&lt;/h1&gt; &lt;img src=&quot;emblem.png&quot; alt=&quot;emblem&quot;&gt;
+    &lt;/header&gt;
+    &lt;h1&gt;Add/Remove Family Member&lt;/h1&gt;
+    &lt;form&gt;
+        &lt;label for=&quot;action&quot;&gt;Action:&lt;/label&gt;&lt;br&gt;
+        &lt;select id=&quot;action&quot; name=&quot;action&quot;&gt;
+            &lt;option value=&quot;add&quot;&gt;Add&lt;/option&gt;
+            &lt;option value=&quot;remove&quot;&gt;Remove&lt;/option&gt;
+        &lt;/select&gt;&lt;br&gt;&lt;br&gt;
+        &lt;label for=&quot;name&quot;&gt;Member's Name:&lt;/label&gt;&lt;br&gt;
+        &lt;input type=&quot;text&quot; id=&quot;name&quot; name=&quot;name&quot;&gt;&lt;br&gt;&lt;br&gt;
+        &lt;button class=&quot;submit&quot;&gt;Submit&lt;/button&gt;
+    &lt;/form&gt;
+    &lt;a href=&quot;update.html&quot;&gt;Back&lt;/a&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+        </code></pre>
+
+        <h3>Address Page:</h3>
+        <pre><code id="rationCode">
+            &lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;
+    &lt;title&gt;Change Address&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header id=&quot;header&quot;&gt;
+        &lt;img src=&quot;flag.png&quot; alt=&quot;Indian Flag&quot;&gt; &lt;h1&gt;National Food Security Portal&lt;/h1&gt; &lt;img src=&quot;emblem.png&quot; alt=&quot;emblem&quot;&gt;
+    &lt;/header&gt;
+    &lt;h1&gt;Change Address&lt;/h1&gt;
+    &lt;form&gt;
+        &lt;label for=&quot;house&quot;&gt;House/Flat Number:&lt;/label&gt;&lt;br&gt;
+        &lt;input type=&quot;text&quot; id=&quot;house&quot; name=&quot;house&quot;&gt;&lt;br&gt;&lt;br&gt;
+
+        &lt;label for=&quot;street&quot;&gt;Street/Locality:&lt;/label&gt;&lt;br&gt;
+        &lt;input type=&quot;text&quot; id=&quot;street&quot; name=&quot;street&quot;&gt;&lt;br&gt;&lt;br&gt;
+
+        &lt;label for=&quot;city&quot;&gt;City/Town:&lt;/label&gt;&lt;br&gt;
+        &lt;input type=&quot;text&quot; id=&quot;city&quot; name=&quot;city&quot;&gt;&lt;br&gt;&lt;br&gt;
+
+        &lt;button class=&quot;submit&quot;&gt;Submit&lt;/button&gt;
+    &lt;/form&gt;
+    &lt;a href=&quot;update.html&quot;&gt;Back&lt;/a&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+        </code></pre>
+
+        <h3>Common CSS:</h3>
+        <pre><code id="rationCSS">
+            /* style.css */
+#header {
+    display: flex;
+    justify-content: center; /* Space between elements */
+    gap: 10px;
+    align-items: center; /* Align vertically */
+    padding: 10px 20px; /* Add some padding */
+    background-color: #f0f0f0; /* Light background color */
+    margin-bottom: 20px; /* Add margin below the header */
+}
+
+#header img {
+    width: 50px; /* Set flag image width */
+    margin: 0 10px;
+}
+#header h1{
+    width: 80vw;
+    text-align: left;
+    color: black;
+}
+
+body {
+    font-family: sans-serif; /* Use a clean, readable font */
+    margin: 20px; /* Add some margin around the content */
+    line-height: 1.6; /* Improve text readability */
+    background-color: #f7f5f2; /* Light background color */
+    color: #333; /* Dark text color for contrast */
+}
+
+h1 {
+    color: #007bff; /* Blue heading color */
+    text-align: center;
+}
+
+ul {
+    list-style: none; /* Remove bullet points from lists */
+    padding: 0;
+    text-align: center;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none; /* Remove underlines from links */
+    color: #007bff; /* Blue link color */
+    padding: 10px 20px;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+a:hover {
+    background-color: #007bff; /* Blue background on hover */
+    color: white; /* White text on hover */
+}
+
+form {
+    max-width: 500px;
+    margin: 20px auto; /* Center the form */
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+label {
+    display: block; /* Make labels appear above inputs */
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+select {
+    width: calc(100% - 12px); /* Full width minus padding and border */
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.submit {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit:hover {
+    background-color: #0056b3;
+
+}
+
+.submit:focus {
+    background-color: #0056b3;
+    
+}
+
+.back-link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.message{
+    width: 20vw;
+    height: 5vh;
+    border: 1px solid black;
+    position: absolute;
+    right: 150vw;
+}
+        </code></pre>
+        <h3>HTML Components:</h3>
+        <ul>
+            <li>!DOCTYPE html: Declares the document type and version of HTML.</li>
+            <li>html: The root element of the HTML document.</li>
+            <li>head: Contains meta-information about the HTML document.</li>
+            <li>title: Specifies the title of the HTML page.</li>
+            <li>link: Links external resources (CSS).</li>
+            <li>style: Contains inline CSS styles.</li>
+            <li>body: Contains the visible page content.</li>
+            <li>header: Represents a header section.</li>
+            <li>img: Embeds an image.</li>
+            <li>h1: Defines a level 1 heading.</li>
+            <li>div: Defines a division or section.</li>
+            <li>a: Defines a hyperlink.</li>
+        </ul>
+
+        <h3>CSS Properties (update.html - Inline Styles):</h3>
+        <ul>
+            <li>display: Specifies the display behavior (grid, flex, block).</li>
+            <li>grid-template-columns: Defines the columns in a grid layout.</li>
+            <li>gap: Sets the spacing between grid items.</li>
+            <li>padding: Sets the inner padding.</li>
+            <li>flex-direction: Sets the direction of flex items.</li>
+            <li>align-items: Aligns items along the cross axis (flexbox).</li>
+            <li>justify-content: Aligns items along the main axis (flexbox).</li>
+            <li>border-width: Sets the width of the border.</li>
+            <li>text-align: Aligns text horizontally.</li>
+            <li>min-height: Sets a minimum height.</li>
+            <li>content: Used with ::before and ::after pseudo-elements to insert content.</li>
+            <li>width: Sets the width.</li>
+            <li>height: Sets the height.</li>
+            <li>background-image: Sets a background image.</li>
+            <li>background-size: Specifies the size of the background image.</li>
+            <li>background-repeat: Specifies how a background image is repeated.</li>
+            <li>margin-bottom: Sets the bottom margin.</li>
+        </ul>
+
+        <h3>CSS Properties (style.css - External Styles):</h3>
+        <ul>
+            <li>display: Specifies the display behavior (flex, block).</li>
+            <li>justify-content: Aligns items along the main axis (flexbox).</li>
+            <li>gap: Sets the spacing between flex items.</li>
+            <li>align-items: Aligns items along the cross axis (flexbox).</li>
+            <li>padding: Sets the inner padding.</li>
+            <li>background-color: Sets the background color.</li>
+            <li>margin-bottom: Sets the bottom margin.</li>
+            <li>width: Sets the width.</li>
+            <li>text-align: Aligns text horizontally.</li>
+            <li>color: Sets the text color.</li>
+            <li>font-family: Specifies the font family.</li>
+            <li>margin: Sets the outer margin.</li>
+            <li>line-height: Sets the line height.</li>
+            <li>list-style: Sets list properties.</li>
+            <li>text-decoration: Sets text decorations.</li>
+            <li>border: Sets the border.</li>
+            <li>border-radius: Sets the border radius.</li>
+            <li>transition: Defines smooth transitions.</li>
+            <li>max-width: Sets the maximum width.</li>
+            <li>box-shadow: Adds a box shadow.</li>
+            <li>font-weight: Sets the font weight.</li>
+            <li>box-sizing: Adjusts how width and height are calculated.</li>
+            <li>cursor: Sets the cursor style.</li>
+            <li>right: Sets the right position.</li>
+            <li>position: Sets the positioning method.</li>
+            <li>height: Sets the height.</li>
+        </ul>
+    </div>
+
+</body>
+
+</html>
